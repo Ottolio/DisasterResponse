@@ -30,4 +30,3 @@ The project is the second of four projects in the Data Scientist course of Udaci
 ## Licensing
 The code is licensed under MIT and Udacity license. 
 The categorized messages data under Appen.
-![image](https://user-images.githubusercontent.com/99094569/160290421-515fb54d-8bb8-4eb9-a57e-990191678c65.png)
