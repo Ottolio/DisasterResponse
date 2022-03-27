@@ -1,9 +1,9 @@
-# Project 2 of Data Scientist course on Udacity: 
+Project two of four of the "Data Scientist" course on Udacity: 
 # Disaster Response Pipeline
 This Pipeline provides a html application (website) where a message related to a crisis can be written. The  with an underlying python code of the application then classifies the message automatically into one or more of the 36 categories. The underlying machine learning algorithm was trained on a collection of categorized disaster messages from [Appen](https://www.appen.com/).
 
 ## Installation
-The code was written in Python 3.
+The code was written in Python 3 und uses a number of libraries that will be imported.
 
 ## Running the application (original instructions from Udacity:)
 1. Run the following commands in the project's root directory to set up your database and model.
