@@ -22,8 +22,22 @@ The code was written in Python 3.
 ## Background
 The project is the second of four projects in the Data Scientist course of Udacity.
 
+--------------------------------------------------------------
 
-#### Screenshots
+## File folders and content
+
+#### data
+Contains the training data from Appen and the code that cleans the data and saves it to an sqlite database. The sqlite database is then ready for the machine learning code in the folder "models".
+
+#### models
+The python code in this folder uses a machine learning pipeline with a natural language toolkit to train a model to categorize a disaster message. Various models are tried via GridSearchCV and the best model is saved to a pickle file. the pickle file is not contained in this github repo due to its size of around 100 MB. The pickle file will be saved on your computer if you run the code locally. The pickle file will then be used by the python and html website code in the folder "app".
+
+#### app
+The python and html code files load the data and the trained model and display the webpage. In the webpage, an entered message will be classified. the classification among the 36 categories will be schon below with highlighted bars (compare screenshots below).
+
+--------------------------------------------------------------
+
+### Screenshots
 ![](https://github.com/Ottolio/DisasterResponse/blob/main/pic1.png)
 ![](https://github.com/Ottolio/DisasterResponse/blob/main/pic2.png)
 
