@@ -1,4 +1,5 @@
-# Project 2 of Data Scientist course on Udacity: Disaster Response Pipeline
+# Project 2 of Data Scientist course on Udacity: 
+# Disaster Response Pipeline
 This Pipeline provides a thml application (website) where a message related to a crisis can be written. The application then classifies the message automatically into one or more of the 36 categories. The underlying machine learning algorithm was trained on a collection of categorized disaster messages from [Appen](https://www.appen.com/).
 
 ## Installation
