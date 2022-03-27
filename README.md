@@ -24,8 +24,8 @@ The project is the second of four projects in the Data Scientist course of Udaci
 
 
 #### Screenshots
-![](https://github.com/Ottolio/DisasterResponse/edit/main/pic1.png)
-![](https://github.com/Ottolio/DisasterResponse/edit/main/pic2.png)
+![](https://github.com/Ottolio/DisasterResponse/blob/main/pic1.png)
+![](https://github.com/Ottolio/DisasterResponse/blob/main/pic2.png)
 
 ## Licensing
 The code is licensed under MIT and Udacity license. 
