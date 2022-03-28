@@ -39,6 +39,7 @@ The python and html code files load the data and the trained model and display t
 
 ### Screenshots
 ![](https://github.com/Ottolio/DisasterResponse/blob/main/pic1.png)
+![](https://github.com/Ottolio/DisasterResponse/blob/main/pic1b.png)
 ![](https://github.com/Ottolio/DisasterResponse/blob/main/pic2.png)
 
 ## Licensing
