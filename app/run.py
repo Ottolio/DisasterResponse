@@ -36,6 +36,7 @@ model = joblib.load("../models/classifier.pkl")
 # index webpage displays cool visuals and receives user input text for model
 @app.route('/')
 @app.route('/index')
+
 def index():
     
     # extract data needed for visuals
@@ -45,6 +46,15 @@ def index():
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
+        
+        # NEW after first review: preparing data: additional plot for training data counts in categories
+        # same graph for categories as for genres:
+    df_cats = df.drop(['id', 'message', 'original', 'genre'], axis=1)           #df_cats.head(2)
+    categories_col_title = df_cats.keys()                                       #categories_col_title
+    list_categories = list(categories_col_title)                                #list_categories
+    counts_in_categories = df_cats.sum(axis = 0, skipna = True)
+    
+    # NEW: additional plot for training data counts in categories
     graphs = [
         {
             'data': [
@@ -63,6 +73,24 @@ def index():
                     'title': "Genre"
                 }
             }
+        },
+        {
+            'data': [
+                Bar(
+                    x=list_categories,
+                    y=counts_in_categories
+                )
+            ],
+
+            'layout': {
+                'title': 'Counts in each category of training data from Appen.com',
+                'yaxis': {
+                    'title': "Counts"
+                },
+                'xaxis': {
+                    'title': "Categories"
+                }
+            }
         }
     ]
     
@@ -72,6 +100,8 @@ def index():
     
     # render web page with plotly graphs
     return render_template('master.html', ids=ids, graphJSON=graphJSON)
+
+
 
 
 # web page that handles user query and displays model results
